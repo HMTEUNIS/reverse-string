@@ -1,6 +1,20 @@
-function reverseString(str) {
-  // type your code here
-}
+function reverseString(str) 
+   
+  {
+    const arr= Array.from(str)
+     let newArr = []
+   
+     for (let i = 0 ; i < arr.length ; i++){
+    newArr.unshift(arr[i])
+     }
+     
+     
+     return newArr.join("")
+   }
+
+
+
+console.log(reverseString("tu"))
 
 if (require.main === module) {
   // add your own tests in here
